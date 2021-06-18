@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="14.2.1" version="14.2.1" Modules="simple" RootPath="." Language="en" Id="{4FCBE6FD-CAC0-40E6-8EBE-D51C59B3C87F}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="HiddenItems" Value="AppXProductDetailsComponent;AppXDependenciesComponent;AppXAppDetailsComponent;AppXVisualAssetsComponent;AppXCapabilitiesComponent;AppXAppDeclarationsComponent;AppXUriRulesComponent;MsiThemeComponent;BackgroundImagesComponent;UpdaterComponent;SerValComponent;DigCertStoreComponent;MsiInstExSeqComponent;DictionaryComponent;MsiAppSearchComponent;MsiAssemblyComponent;MsiClassComponent;MsiOdbcDataSrcComponent;MsiServInstComponent;MsiOrgComponent;MsiExtComponent;CPLAppletComponent;ActSyncAppComponent;PreReqComponent;WebApplicationsComponent;TilesComponent;MsiJavaComponent;MsiDriverPackagesComponent;UserAccountsComponent;ScheduledTasksComponent;SqlConnectionComponent;AutorunComponent;FirewallExceptionComponent;GameUxComponent;MsiDirectEditorComponent;SharePointSlnComponent;SilverlightSlnComponent;MultipleInstancesComponent;SccmComponent;TilesComponent"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CTRLS" Value="3"/>
+    <ROW Property="Manufacturer" Value="DeSo"/>
+    <ROW Property="ProductCode" Value="1033:{2C076FFB-5D45-48C5-8E0D-6C3A76DD0082} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="nameless"/>
+    <ROW Property="ProductVersion" Value="1.0.0" Type="32"/>
+    <ROW Property="RUNAPPLICATION" Value="1" Type="4"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{86DCC3C7-29D2-42FE-A415-96620762A0BE}"/>
+    <ROW Property="VIEWREADME" Value="1" Type="4"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT" MultiBuildValue="DefaultBuild:Windows XP SP3 x86, Windows Server 2003 SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003 RTM, Windows XP/2003 SP1, Windows XP SP2 x86" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64" MultiBuildValue="DefaultBuild:Windows XP SP2 x64, Windows Server 2003 SP2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT64Display" MultiBuildValue="DefaultBuild:Windows XP SP2 x64, Windows Server 2003 SP2 x64" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNTDisplay" MultiBuildValue="DefaultBuild:Windows XP SP3 x86, Windows Server 2003 SP2 x86" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="US_Dir" Directory_Parent="profile_Dir" DefaultDir="US"/>
+    <ROW Directory="autoconfig_Dir" Directory_Parent="defaults_Dir" DefaultDir="AUTOCO~1|autoconfig"/>
+    <ROW Directory="chrome_1_Dir" Directory_Parent="profile_Dir" DefaultDir="chrome"/>
+    <ROW Directory="chrome_2_Dir" Directory_Parent="US_Dir" DefaultDir="chrome"/>
+    <ROW Directory="chrome_Dir" Directory_Parent="data_Dir" DefaultDir="chrome"/>
+    <ROW Directory="components_Dir" Directory_Parent="data_Dir" DefaultDir="COMPON~1|components"/>
+    <ROW Directory="data_Dir" Directory_Parent="APPDIR" DefaultDir="data"/>
+    <ROW Directory="defaults_Dir" Directory_Parent="data_Dir" DefaultDir="defaults"/>
+    <ROW Directory="dictionaries_Dir" Directory_Parent="data_Dir" DefaultDir="DICTIO~1|dictionaries"/>
+    <ROW Directory="dtd_Dir" Directory_Parent="res_Dir" DefaultDir="dtd"/>
+    <ROW Directory="entityTables_Dir" Directory_Parent="res_Dir" DefaultDir="ENTITY~1|entityTables"/>
+    <ROW Directory="fonts_Dir" Directory_Parent="res_Dir" DefaultDir="fonts"/>
+    <ROW Directory="greprefs_Dir" Directory_Parent="data_Dir" DefaultDir="greprefs"/>
+    <ROW Directory="html_Dir" Directory_Parent="res_Dir" DefaultDir="html"/>
+    <ROW Directory="modules_Dir" Directory_Parent="data_Dir" DefaultDir="modules"/>
+    <ROW Directory="plugins_Dir" Directory_Parent="data_Dir" DefaultDir="plugins"/>
+    <ROW Directory="pref_Dir" Directory_Parent="defaults_Dir" DefaultDir="pref"/>
+    <ROW Directory="profile_Dir" Directory_Parent="defaults_Dir" DefaultDir="profile"/>
+    <ROW Directory="res_Dir" Directory_Parent="data_Dir" DefaultDir="res"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="AccessibleMarshal.dll" ComponentId="{92E08D5F-B1E2-4239-93F4-BBA2A5718FA8}" Directory_="data_Dir" Attributes="0" KeyPath="AccessibleMarshal.dll"/>
+    <ROW Component="AxInterop.MSTSCLib.dll" ComponentId="{32CDB771-41D4-44F2-BADD-9D77298AA557}" Directory_="APPDIR" Attributes="0" KeyPath="AxInterop.MSTSCLib.dll"/>
+    <ROW Component="AxInterop.WMPLib.dll" ComponentId="{807D0C03-88C8-4F0B-9538-825A3632068F}" Directory_="APPDIR" Attributes="0" KeyPath="AxInterop.WMPLib.dll"/>
+    <ROW Component="IA2Marshal.dll" ComponentId="{9857F38B-8546-4056-9F6E-DAAA45FE3D07}" Directory_="data_Dir" Attributes="0" KeyPath="IA2Marshal.dll"/>
+    <ROW Component="Interop.MSTSCLib.dll" ComponentId="{7FB0EC90-8205-49CB-8FF2-E35F72719545}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.MSTSCLib.dll"/>
+    <ROW Component="Interop.WMPLib.dll" ComponentId="{B4106ED3-8D12-439B-A622-C939FBBF6C5C}" Directory_="APPDIR" Attributes="0" KeyPath="Interop.WMPLib.dll"/>
+    <ROW Component="OKUBEN.txt" ComponentId="{CE993648-94E9-4764-8908-9BF59BFC14E3}" Directory_="APPDIR" Attributes="0" KeyPath="OKUBEN.txt" Type="0"/>
+    <ROW Component="ProductInformation" ComponentId="{4182FF4B-7E9E-4648-8539-A3A7B55B13AE}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="accessibilitymsaa.xpt" ComponentId="{4F2D2CA6-0788-4A8F-B4E2-CCFC34944D76}" Directory_="components_Dir" Attributes="0" KeyPath="accessibilitymsaa.xpt" Type="0"/>
+    <ROW Component="all.js" ComponentId="{2236026B-9D3F-4753-9EF2-030A5F3DDC15}" Directory_="greprefs_Dir" Attributes="0" KeyPath="all.js" Type="0"/>
+    <ROW Component="arrow.gif" ComponentId="{72E5FBF0-5537-46A6-BE84-7E6ACD97E834}" Directory_="res_Dir" Attributes="0" KeyPath="arrow.gif" Type="0"/>
+    <ROW Component="classic.jar" ComponentId="{13E20396-4B88-49FC-8573-E953457CACDE}" Directory_="chrome_Dir" Attributes="0" KeyPath="classic.jar" Type="0"/>
+    <ROW Component="crashreporter.exe" ComponentId="{E0FEEB5E-94F2-4A69-9D50-E3ED26FD49F1}" Directory_="data_Dir" Attributes="0" KeyPath="crashreporter.exe"/>
+    <ROW Component="crashreporter.ini" ComponentId="{6A4C4585-CC38-4C63-B35F-4CB97FEBFC78}" Directory_="data_Dir" Attributes="0" KeyPath="crashreporter.ini" Type="0"/>
+    <ROW Component="debug.js" ComponentId="{F7D7CC22-53B8-4DC9-B2D6-2E20703E142C}" Directory_="modules_Dir" Attributes="0" KeyPath="debug.js" Type="0"/>
+    <ROW Component="enUS.aff" ComponentId="{D71734D9-4B30-4DAE-B2DE-DDF6AB3BE4F8}" Directory_="dictionaries_Dir" Attributes="0" KeyPath="enUS.aff" Type="0"/>
+    <ROW Component="folder.png" ComponentId="{8123DA49-0ACA-4030-B23B-9FF1F201569D}" Directory_="html_Dir" Attributes="0" KeyPath="folder.png" Type="0"/>
+    <ROW Component="freebl3.dll" ComponentId="{4620380C-1633-415E-979A-2CCABA73146B}" Directory_="data_Dir" Attributes="0" KeyPath="freebl3.dll"/>
+    <ROW Component="html40Latin1.properties" ComponentId="{0A58F212-9B41-4C94-89AA-3FF97F9F018B}" Directory_="entityTables_Dir" Attributes="0" KeyPath="html40Latin1.properties" Type="0"/>
+    <ROW Component="javaxpcomglue.dll" ComponentId="{233D27EF-D1AE-4769-9B9E-1EA9B6599EF5}" Directory_="data_Dir" Attributes="0" KeyPath="javaxpcomglue.dll"/>
+    <ROW Component="js.exe" ComponentId="{F89769C6-1FF8-4436-BAB1-127D9AB90B6F}" Directory_="data_Dir" Attributes="0" KeyPath="js.exe"/>
+    <ROW Component="js3250.dll" ComponentId="{87FDA0B4-F2E3-4383-B10A-216EC719AE6F}" Directory_="data_Dir" Attributes="0" KeyPath="js3250.dll"/>
+    <ROW Component="localstore.rdf" ComponentId="{082F919A-46AB-4824-A620-296F27F5CA18}" Directory_="profile_Dir" Attributes="0" KeyPath="localstore.rdf" Type="0"/>
+    <ROW Component="localstore.rdf_1" ComponentId="{B8873D4A-6BA2-4758-846E-B73325B96131}" Directory_="US_Dir" Attributes="0" KeyPath="localstore.rdf_1" Type="0"/>
+    <ROW Component="mathfont.properties" ComponentId="{54A0F62E-313E-48D6-AA96-7262596C83A4}" Directory_="fonts_Dir" Attributes="0" KeyPath="mathfont.properties" Type="0"/>
+    <ROW Component="mathml.dtd" ComponentId="{A48C877F-B6AE-4F63-AB77-E63469496D81}" Directory_="dtd_Dir" Attributes="0" KeyPath="mathml.dtd" Type="0"/>
+    <ROW Component="mozcrt19.dll" ComponentId="{289D7D88-B32A-42DD-8F49-89CCB3DAE03B}" Directory_="data_Dir" Attributes="0" KeyPath="mozcrt19.dll"/>
+    <ROW Component="mozctl.dll" ComponentId="{510B58C0-2FC6-4A4F-A281-EF02F5144EAB}" Directory_="data_Dir" Attributes="0" KeyPath="mozctl.dll"/>
+    <ROW Component="mozctlx.dll" ComponentId="{9E6631AC-6175-412F-BF99-71D8A523686A}" Directory_="data_Dir" Attributes="0" KeyPath="mozctlx.dll"/>
+    <ROW Component="nameless.exe" ComponentId="{8F4DA0A9-2540-40EF-BF63-526A70577D95}" Directory_="APPDIR" Attributes="0" KeyPath="nameless.exe"/>
+    <ROW Component="npnul32.dll" ComponentId="{415D70C2-1CC3-45B2-8E5E-95D3DE5DFE0D}" Directory_="plugins_Dir" Attributes="0" KeyPath="npnul32.dll"/>
+    <ROW Component="nspr4.dll" ComponentId="{DE8D867A-3CCE-4F80-AAB4-C32337750AE7}" Directory_="data_Dir" Attributes="0" KeyPath="nspr4.dll"/>
+    <ROW Component="nss3.dll" ComponentId="{AE31C246-04E2-428D-88A8-E5B12CC912E6}" Directory_="data_Dir" Attributes="0" KeyPath="nss3.dll"/>
+    <ROW Component="nssckbi.dll" ComponentId="{88F5EF0B-69EC-4949-8FCC-B2191ED10C59}" Directory_="data_Dir" Attributes="0" KeyPath="nssckbi.dll"/>
+    <ROW Component="nssdbm3.dll" ComponentId="{561F9004-1191-42E8-A524-1072F8D77841}" Directory_="data_Dir" Attributes="0" KeyPath="nssdbm3.dll"/>
+    <ROW Component="nssutil3.dll" ComponentId="{CED3E224-C8BD-4A08-8268-7B3A7C5DA1CA}" Directory_="data_Dir" Attributes="0" KeyPath="nssutil3.dll"/>
+    <ROW Component="platform.js" ComponentId="{1C82AD01-C347-48EC-937C-8967E82A9923}" Directory_="autoconfig_Dir" Attributes="0" KeyPath="platform.js" Type="0"/>
+    <ROW Component="plc4.dll" ComponentId="{6669D498-5362-4C1B-905E-BF45329C14E0}" Directory_="data_Dir" Attributes="0" KeyPath="plc4.dll"/>
+    <ROW Component="plds4.dll" ComponentId="{96F523BA-77F2-4B67-BF34-E84F819979E2}" Directory_="data_Dir" Attributes="0" KeyPath="plds4.dll"/>
+    <ROW Component="redit.exe" ComponentId="{E8220F7A-8D23-4C80-A69C-698034C26E29}" Directory_="data_Dir" Attributes="0" KeyPath="redit.exe"/>
+    <ROW Component="smime3.dll" ComponentId="{46E0A277-50A9-4E80-87F8-FBD37F33C935}" Directory_="data_Dir" Attributes="0" KeyPath="smime3.dll"/>
+    <ROW Component="softokn3.dll" ComponentId="{1DCAE0D8-99A0-49C1-B82B-FFF065D3A085}" Directory_="data_Dir" Attributes="0" KeyPath="softokn3.dll"/>
+    <ROW Component="sqlite3.dll" ComponentId="{FFE8FC86-EDE0-4B11-B364-BA132CD4CE98}" Directory_="data_Dir" Attributes="0" KeyPath="sqlite3.dll"/>
+    <ROW Component="ssl3.dll" ComponentId="{21A9035F-D5E2-4CB9-8DFD-E09FC8BAAB66}" Directory_="data_Dir" Attributes="0" KeyPath="ssl3.dll"/>
+    <ROW Component="updater.exe" ComponentId="{028AF056-81B2-4416-AD5E-B285D3569E5E}" Directory_="data_Dir" Attributes="0" KeyPath="updater.exe"/>
+    <ROW Component="userChromeexample.css" ComponentId="{9F93C846-F399-4E10-91FB-9C1908A9243C}" Directory_="chrome_1_Dir" Attributes="0" KeyPath="userChromeexample.css" Type="0"/>
+    <ROW Component="userChromeexample.css_1" ComponentId="{09858B95-F584-40AF-B7A1-98342735D1B2}" Directory_="chrome_2_Dir" Attributes="0" KeyPath="userChromeexample.css_1" Type="0"/>
+    <ROW Component="xpcom.dll" ComponentId="{6C9D371B-D524-43AE-96EA-2EB025EC3408}" Directory_="data_Dir" Attributes="0" KeyPath="xpcom.dll"/>
+    <ROW Component="xpcshell.exe" ComponentId="{1CC12DED-7C6D-4C84-B7CF-5C66A711726E}" Directory_="data_Dir" Attributes="0" KeyPath="xpcshell.exe"/>
+    <ROW Component="xpidl.exe" ComponentId="{6E5CE646-7060-4BF7-BC62-18D8B73D226B}" Directory_="data_Dir" Attributes="0" KeyPath="xpidl.exe"/>
+    <ROW Component="xpt_dump.exe" ComponentId="{55C0BE8B-BEE9-4695-B032-0B056894C244}" Directory_="data_Dir" Attributes="0" KeyPath="xpt_dump.exe"/>
+    <ROW Component="xpt_link.exe" ComponentId="{C177E23C-F5C9-4241-8ED2-1A2966291D23}" Directory_="data_Dir" Attributes="0" KeyPath="xpt_link.exe"/>
+    <ROW Component="xul.dll" ComponentId="{6415ACC2-540D-45EC-9FA7-FFC3F32CC4DA}" Directory_="data_Dir" Attributes="0" KeyPath="xul.dll"/>
+    <ROW Component="xulrunner.exe" ComponentId="{9F6B9273-606F-4FF9-8E21-72E9AF3B43D3}" Directory_="data_Dir" Attributes="0" KeyPath="xulrunner.exe"/>
+    <ROW Component="xulrunner.js" ComponentId="{D47A2DF5-705A-4CC1-A7FB-4F78DEDF8B27}" Directory_="pref_Dir" Attributes="0" KeyPath="xulrunner.js" Type="0"/>
+    <ROW Component="xulrunnerstub.exe" ComponentId="{56894F87-5D4D-436E-B88F-421CE9FF0766}" Directory_="data_Dir" Attributes="0" KeyPath="xulrunnerstub.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0" Components="AccessibleMarshal.dll AxInterop.MSTSCLib.dll AxInterop.WMPLib.dll IA2Marshal.dll Interop.MSTSCLib.dll Interop.WMPLib.dll OKUBEN.txt ProductInformation accessibilitymsaa.xpt all.js arrow.gif classic.jar crashreporter.exe crashreporter.ini debug.js enUS.aff folder.png freebl3.dll html40Latin1.properties javaxpcomglue.dll js.exe js3250.dll localstore.rdf localstore.rdf_1 mathfont.properties mathml.dtd mozcrt19.dll mozctl.dll mozctlx.dll nameless.exe npnul32.dll nspr4.dll nss3.dll nssckbi.dll nssdbm3.dll nssutil3.dll platform.js plc4.dll plds4.dll redit.exe smime3.dll softokn3.dll sqlite3.dll ssl3.dll updater.exe userChromeexample.css userChromeexample.css_1 xpcom.dll xpcshell.exe xpidl.exe xpt_dump.exe xpt_link.exe xul.dll xulrunner.exe xulrunner.js xulrunnerstub.exe"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AccessibleMarshal.dll" Component_="AccessibleMarshal.dll" FileName="ACCESS~1.DLL|AccessibleMarshal.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\AccessibleMarshal.dll" SelfReg="false" NextFile="classic.jar"/>
+    <ROW File="AxInterop.MSTSCLib.dll" Component_="AxInterop.MSTSCLib.dll" FileName="AXINTE~1.DLL|AxInterop.MSTSCLib.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\AxInterop.MSTSCLib.dll" SelfReg="false" NextFile="AxInterop.WMPLib.dll"/>
+    <ROW File="AxInterop.WMPLib.dll" Component_="AxInterop.WMPLib.dll" FileName="AXINTE~2.DLL|AxInterop.WMPLib.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\AxInterop.WMPLib.dll" SelfReg="false" NextFile="Interop.MSTSCLib.dll"/>
+    <ROW File="DownloadLastDir.jsm" Component_="debug.js" FileName="DOWNLO~1.JSM|DownloadLastDir.jsm" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\DownloadLastDir.jsm" SelfReg="false" NextFile="DownloadUtils.jsm"/>
+    <ROW File="DownloadUtils.jsm" Component_="debug.js" FileName="DOWNLO~2.JSM|DownloadUtils.jsm" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\DownloadUtils.jsm" SelfReg="false" NextFile="ISO8601DateUtils.jsm"/>
+    <ROW File="EditorOverride.css" Component_="arrow.gif" FileName="EDITOR~1.CSS|EditorOverride.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\EditorOverride.css" SelfReg="false" NextFile="html40Latin1.properties"/>
+    <ROW File="FeedProcessor.js" Component_="accessibilitymsaa.xpt" FileName="FEEDPR~1.JS|FeedProcessor.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\FeedProcessor.js" SelfReg="false" NextFile="feeds.xpt"/>
+    <ROW File="IA2Marshal.dll" Component_="IA2Marshal.dll" FileName="IA2MAR~1.DLL|IA2Marshal.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\IA2Marshal.dll" SelfReg="false" NextFile="javaxpcom.jar"/>
+    <ROW File="ISO8601DateUtils.jsm" Component_="debug.js" FileName="ISO860~1.JSM|ISO8601DateUtils.jsm" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\ISO8601DateUtils.jsm" SelfReg="false" NextFile="Microformats.js"/>
+    <ROW File="Interop.MSTSCLib.dll" Component_="Interop.MSTSCLib.dll" FileName="INTERO~1.DLL|Interop.MSTSCLib.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\Interop.MSTSCLib.dll" SelfReg="false" NextFile="Interop.WMPLib.dll"/>
+    <ROW File="Interop.WMPLib.dll" Component_="Interop.WMPLib.dll" FileName="INTERO~2.DLL|Interop.WMPLib.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\Interop.WMPLib.dll" SelfReg="false" NextFile="AccessibleMarshal.dll"/>
+    <ROW File="LICENSE" Component_="crashreporter.ini" FileName="LICENSE" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\LICENSE" SelfReg="false" NextFile="debug.js"/>
+    <ROW File="Microformats.js" Component_="debug.js" FileName="MICROF~1.JS|Microformats.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\Microformats.js" SelfReg="false" NextFile="PlacesDBUtils.jsm"/>
+    <ROW File="NetworkGeolocationProvider.js" Component_="accessibilitymsaa.xpt" FileName="NETWOR~1.JS|NetworkGeolocationProvider.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\NetworkGeolocationProvider.js" SelfReg="false" NextFile="nsAddonRepository.js"/>
+    <ROW File="OKUBEN.txt" Component_="OKUBEN.txt" FileName="OKUBEN~1.TXT|OKU BENİ.txt" Attributes="0" SourcePath="..\..\..\..\Desktop\OKU BENİ.txt" SelfReg="false"/>
+    <ROW File="PlacesDBUtils.jsm" Component_="debug.js" FileName="PLACES~1.JSM|PlacesDBUtils.jsm" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\PlacesDBUtils.jsm" SelfReg="false" NextFile="PluralForm.jsm"/>
+    <ROW File="PluralForm.jsm" Component_="debug.js" FileName="PLURAL~1.JSM|PluralForm.jsm" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\PluralForm.jsm" SelfReg="false" NextFile="SpatialNavigation.js"/>
+    <ROW File="SpatialNavigation.js" Component_="debug.js" FileName="SPATIA~1.JS|SpatialNavigation.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\SpatialNavigation.js" SelfReg="false" NextFile="utils.js"/>
+    <ROW File="WindowDraggingUtils.jsm" Component_="debug.js" FileName="WINDOW~1.JSM|WindowDraggingUtils.jsm" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\WindowDraggingUtils.jsm" SelfReg="false" NextFile="XPCOMUtils.jsm"/>
+    <ROW File="XPCOMUtils.jsm" Component_="debug.js" FileName="XPCOMU~1.JSM|XPCOMUtils.jsm" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\XPCOMUtils.jsm" SelfReg="false" NextFile="mozcrt19.dll"/>
+    <ROW File="accessibility.xpt" Component_="accessibilitymsaa.xpt" FileName="ACCESS~2.XPT|accessibility.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\accessibility.xpt" SelfReg="false" NextFile="alerts.xpt"/>
+    <ROW File="accessibilitymsaa.xpt" Component_="accessibilitymsaa.xpt" FileName="ACCESS~1.XPT|accessibility-msaa.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\accessibility-msaa.xpt" SelfReg="false" NextFile="accessibility.xpt"/>
+    <ROW File="alerts.xpt" Component_="accessibilitymsaa.xpt" FileName="alerts.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\alerts.xpt" SelfReg="false" NextFile="appshell.xpt"/>
+    <ROW File="all.js" Component_="all.js" FileName="all.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\greprefs\all.js" SelfReg="false" NextFile="securityprefs.js"/>
+    <ROW File="appshell.xpt" Component_="accessibilitymsaa.xpt" FileName="appshell.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\appshell.xpt" SelfReg="false" NextFile="appstartup.xpt"/>
+    <ROW File="appstartup.xpt" Component_="accessibilitymsaa.xpt" FileName="APPSTA~1.XPT|appstartup.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\appstartup.xpt" SelfReg="false" NextFile="autocomplete.xpt"/>
+    <ROW File="arrow.gif" Component_="arrow.gif" FileName="arrow.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\arrow.gif" SelfReg="false" NextFile="arrowd.gif"/>
+    <ROW File="arrowd.gif" Component_="arrow.gif" FileName="arrowd.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\arrowd.gif" SelfReg="false" NextFile="brokenimage.gif"/>
+    <ROW File="autocomplete.xpt" Component_="accessibilitymsaa.xpt" FileName="AUTOCO~1.XPT|autocomplete.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\autocomplete.xpt" SelfReg="false" NextFile="autoconfig.xpt"/>
+    <ROW File="autoconfig.xpt" Component_="accessibilitymsaa.xpt" FileName="AUTOCO~2.XPT|autoconfig.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\autoconfig.xpt" SelfReg="false" NextFile="caps.xpt"/>
+    <ROW File="brokenimage.gif" Component_="arrow.gif" FileName="BROKEN~1.GIF|broken-image.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\broken-image.gif" SelfReg="false" NextFile="charsetalias.properties"/>
+    <ROW File="caps.xpt" Component_="accessibilitymsaa.xpt" FileName="caps.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\caps.xpt" SelfReg="false" NextFile="chardet.xpt"/>
+    <ROW File="chardet.xpt" Component_="accessibilitymsaa.xpt" FileName="chardet.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\chardet.xpt" SelfReg="false" NextFile="chrome.xpt"/>
+    <ROW File="charsetData.properties" Component_="arrow.gif" FileName="CHARSE~2.PRO|charsetData.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\charsetData.properties" SelfReg="false" NextFile="contenteditable.css"/>
+    <ROW File="charsetalias.properties" Component_="arrow.gif" FileName="CHARSE~1.PRO|charsetalias.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\charsetalias.properties" SelfReg="false" NextFile="charsetData.properties"/>
+    <ROW File="chrome.xpt" Component_="accessibilitymsaa.xpt" FileName="chrome.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\chrome.xpt" SelfReg="false" NextFile="commandhandler.xpt"/>
+    <ROW File="classic.jar" Component_="classic.jar" FileName="classic.jar" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\classic.jar" SelfReg="false" NextFile="classic.manifest"/>
+    <ROW File="classic.manifest" Component_="classic.jar" FileName="CLASSI~1.MAN|classic.manifest" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\classic.manifest" SelfReg="false" NextFile="comm.jar"/>
+    <ROW File="comm.jar" Component_="classic.jar" FileName="comm.jar" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\comm.jar" SelfReg="false" NextFile="comm.manifest"/>
+    <ROW File="comm.manifest" Component_="classic.jar" FileName="COMM~1.MAN|comm.manifest" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\comm.manifest" SelfReg="false" NextFile="enUS.jar"/>
+    <ROW File="commandhandler.xpt" Component_="accessibilitymsaa.xpt" FileName="COMMAN~1.XPT|commandhandler.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\commandhandler.xpt" SelfReg="false" NextFile="commandlines.xpt"/>
+    <ROW File="commandlines.xpt" Component_="accessibilitymsaa.xpt" FileName="COMMAN~2.XPT|commandlines.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\commandlines.xpt" SelfReg="false" NextFile="composer.xpt"/>
+    <ROW File="composer.xpt" Component_="accessibilitymsaa.xpt" FileName="composer.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\composer.xpt" SelfReg="false" NextFile="compreg.dat"/>
+    <ROW File="compreg.dat" Component_="accessibilitymsaa.xpt" FileName="compreg.dat" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\compreg.dat" SelfReg="false" NextFile="contentprefs.xpt"/>
+    <ROW File="content_base.xpt" Component_="accessibilitymsaa.xpt" FileName="CONTEN~2.XPT|content_base.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\content_base.xpt" SelfReg="false" NextFile="content_html.xpt"/>
+    <ROW File="content_html.xpt" Component_="accessibilitymsaa.xpt" FileName="CONTEN~3.XPT|content_html.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\content_html.xpt" SelfReg="false" NextFile="content_htmldoc.xpt"/>
+    <ROW File="content_htmldoc.xpt" Component_="accessibilitymsaa.xpt" FileName="CONTEN~4.XPT|content_htmldoc.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\content_htmldoc.xpt" SelfReg="false" NextFile="content_xmldoc.xpt"/>
+    <ROW File="content_xmldoc.xpt" Component_="accessibilitymsaa.xpt" FileName="CONTEN~5.XPT|content_xmldoc.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\content_xmldoc.xpt" SelfReg="false" NextFile="content_xslt.xpt"/>
+    <ROW File="content_xslt.xpt" Component_="accessibilitymsaa.xpt" FileName="CONTEN~6.XPT|content_xslt.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\content_xslt.xpt" SelfReg="false" NextFile="content_xtf.xpt"/>
+    <ROW File="content_xtf.xpt" Component_="accessibilitymsaa.xpt" FileName="CONTEN~7.XPT|content_xtf.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\content_xtf.xpt" SelfReg="false" NextFile="cookie.xpt"/>
+    <ROW File="contenteditable.css" Component_="arrow.gif" FileName="CONTEN~1.CSS|contenteditable.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\contenteditable.css" SelfReg="false" NextFile="designmode.css"/>
+    <ROW File="contentprefs.xpt" Component_="accessibilitymsaa.xpt" FileName="CONTEN~1.XPT|contentprefs.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\contentprefs.xpt" SelfReg="false" NextFile="content_base.xpt"/>
+    <ROW File="cookie.xpt" Component_="accessibilitymsaa.xpt" FileName="cookie.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\cookie.xpt" SelfReg="false" NextFile="directory.xpt"/>
+    <ROW File="crashreporter.exe" Component_="crashreporter.exe" FileName="CRASHR~1.EXE|crashreporter.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\crashreporter.exe" SelfReg="false" NextFile="crashreporter.ini" DigSign="true"/>
+    <ROW File="crashreporter.ini" Component_="crashreporter.ini" FileName="CRASHR~1.INI|crashreporter.ini" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\crashreporter.ini" SelfReg="false" NextFile="data.db"/>
+    <ROW File="data.db" Component_="crashreporter.ini" FileName="data.db" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\data.db" SelfReg="false" NextFile="platform.js"/>
+    <ROW File="debug.js" Component_="debug.js" FileName="debug.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\debug.js" SelfReg="false" NextFile="DownloadLastDir.jsm"/>
+    <ROW File="dependentlibs.list" Component_="crashreporter.ini" FileName="DEPEND~1.LIS|dependentlibs.list" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\dependentlibs.list" SelfReg="false" NextFile="enUS.aff"/>
+    <ROW File="designmode.css" Component_="arrow.gif" FileName="DESIGN~1.CSS|designmode.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\designmode.css" SelfReg="false" NextFile="mathml.dtd"/>
+    <ROW File="directory.xpt" Component_="accessibilitymsaa.xpt" FileName="DIRECT~1.XPT|directory.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\directory.xpt" SelfReg="false" NextFile="docshell_base.xpt"/>
+    <ROW File="docshell_base.xpt" Component_="accessibilitymsaa.xpt" FileName="DOCSHE~1.XPT|docshell_base.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\docshell_base.xpt" SelfReg="false" NextFile="dom.xpt"/>
+    <ROW File="dom.xpt" Component_="accessibilitymsaa.xpt" FileName="dom.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom.xpt" SelfReg="false" NextFile="dom_base.xpt"/>
+    <ROW File="dom_base.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_base.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_base.xpt" SelfReg="false" NextFile="dom_canvas.xpt"/>
+    <ROW File="dom_canvas.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_CA~1.XPT|dom_canvas.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_canvas.xpt" SelfReg="false" NextFile="dom_core.xpt"/>
+    <ROW File="dom_core.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_core.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_core.xpt" SelfReg="false" NextFile="dom_css.xpt"/>
+    <ROW File="dom_css.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_css.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_css.xpt" SelfReg="false" NextFile="dom_events.xpt"/>
+    <ROW File="dom_events.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_EV~1.XPT|dom_events.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_events.xpt" SelfReg="false" NextFile="dom_geolocation.xpt"/>
+    <ROW File="dom_geolocation.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_GE~1.XPT|dom_geolocation.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_geolocation.xpt" SelfReg="false" NextFile="dom_html.xpt"/>
+    <ROW File="dom_html.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_html.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_html.xpt" SelfReg="false" NextFile="dom_json.xpt"/>
+    <ROW File="dom_json.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_json.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_json.xpt" SelfReg="false" NextFile="dom_loadsave.xpt"/>
+    <ROW File="dom_loadsave.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_LO~1.XPT|dom_loadsave.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_loadsave.xpt" SelfReg="false" NextFile="dom_offline.xpt"/>
+    <ROW File="dom_offline.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_OF~1.XPT|dom_offline.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_offline.xpt" SelfReg="false" NextFile="dom_range.xpt"/>
+    <ROW File="dom_range.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_RA~1.XPT|dom_range.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_range.xpt" SelfReg="false" NextFile="dom_sidebar.xpt"/>
+    <ROW File="dom_sidebar.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_SI~1.XPT|dom_sidebar.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_sidebar.xpt" SelfReg="false" NextFile="dom_storage.xpt"/>
+    <ROW File="dom_storage.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_ST~1.XPT|dom_storage.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_storage.xpt" SelfReg="false" NextFile="dom_stylesheets.xpt"/>
+    <ROW File="dom_stylesheets.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_ST~2.XPT|dom_stylesheets.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_stylesheets.xpt" SelfReg="false" NextFile="dom_svg.xpt"/>
+    <ROW File="dom_svg.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_svg.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_svg.xpt" SelfReg="false" NextFile="dom_threads.xpt"/>
+    <ROW File="dom_threads.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_TH~1.XPT|dom_threads.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_threads.xpt" SelfReg="false" NextFile="dom_traversal.xpt"/>
+    <ROW File="dom_traversal.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_TR~1.XPT|dom_traversal.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_traversal.xpt" SelfReg="false" NextFile="dom_views.xpt"/>
+    <ROW File="dom_views.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_VI~1.XPT|dom_views.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_views.xpt" SelfReg="false" NextFile="dom_xbl.xpt"/>
+    <ROW File="dom_xbl.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_xbl.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_xbl.xpt" SelfReg="false" NextFile="dom_xpath.xpt"/>
+    <ROW File="dom_xpath.xpt" Component_="accessibilitymsaa.xpt" FileName="DOM_XP~1.XPT|dom_xpath.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_xpath.xpt" SelfReg="false" NextFile="dom_xul.xpt"/>
+    <ROW File="dom_xul.xpt" Component_="accessibilitymsaa.xpt" FileName="dom_xul.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\dom_xul.xpt" SelfReg="false" NextFile="downloads.xpt"/>
+    <ROW File="downloads.xpt" Component_="accessibilitymsaa.xpt" FileName="DOWNLO~1.XPT|downloads.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\downloads.xpt" SelfReg="false" NextFile="editor.xpt"/>
+    <ROW File="editor.xpt" Component_="accessibilitymsaa.xpt" FileName="editor.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\editor.xpt" SelfReg="false" NextFile="embed_base.xpt"/>
+    <ROW File="embed_base.xpt" Component_="accessibilitymsaa.xpt" FileName="EMBED_~1.XPT|embed_base.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\embed_base.xpt" SelfReg="false" NextFile="extensions.xpt"/>
+    <ROW File="enUS.aff" Component_="enUS.aff" FileName="en-US.aff" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\dictionaries\en-US.aff" SelfReg="false" NextFile="enUS.dic"/>
+    <ROW File="enUS.dic" Component_="enUS.aff" FileName="en-US.dic" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\dictionaries\en-US.dic" SelfReg="false" NextFile="freebl3.chk"/>
+    <ROW File="enUS.jar" Component_="classic.jar" FileName="en-US.jar" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\en-US.jar" SelfReg="false" NextFile="enUS.manifest"/>
+    <ROW File="enUS.manifest" Component_="classic.jar" FileName="EN-US~1.MAN|en-US.manifest" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\en-US.manifest" SelfReg="false" NextFile="pippki.jar"/>
+    <ROW File="extensions.xpt" Component_="accessibilitymsaa.xpt" FileName="EXTENS~1.XPT|extensions.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\extensions.xpt" SelfReg="false" NextFile="exthandler.xpt"/>
+    <ROW File="exthandler.xpt" Component_="accessibilitymsaa.xpt" FileName="EXTHAN~1.XPT|exthandler.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\exthandler.xpt" SelfReg="false" NextFile="exthelper.xpt"/>
+    <ROW File="exthelper.xpt" Component_="accessibilitymsaa.xpt" FileName="EXTHEL~1.XPT|exthelper.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\exthelper.xpt" SelfReg="false" NextFile="fastfind.xpt"/>
+    <ROW File="fastfind.xpt" Component_="accessibilitymsaa.xpt" FileName="fastfind.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\fastfind.xpt" SelfReg="false" NextFile="FeedProcessor.js"/>
+    <ROW File="feeds.xpt" Component_="accessibilitymsaa.xpt" FileName="feeds.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\feeds.xpt" SelfReg="false" NextFile="find.xpt"/>
+    <ROW File="find.xpt" Component_="accessibilitymsaa.xpt" FileName="find.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\find.xpt" SelfReg="false" NextFile="gfx.xpt"/>
+    <ROW File="folder.png" Component_="folder.png" FileName="folder.png" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\html\folder.png" SelfReg="false" NextFile="html.css"/>
+    <ROW File="forms.css" Component_="arrow.gif" FileName="forms.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\forms.css" SelfReg="false" NextFile="grabber.gif"/>
+    <ROW File="freebl3.chk" Component_="crashreporter.ini" FileName="freebl3.chk" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\freebl3.chk" SelfReg="false" NextFile="freebl3.dll"/>
+    <ROW File="freebl3.dll" Component_="freebl3.dll" FileName="freebl3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\freebl3.dll" SelfReg="false" NextFile="all.js"/>
+    <ROW File="gfx.xpt" Component_="accessibilitymsaa.xpt" FileName="gfx.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\gfx.xpt" SelfReg="false" NextFile="htmlparser.xpt"/>
+    <ROW File="grabber.gif" Component_="arrow.gif" FileName="grabber.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\grabber.gif" SelfReg="false" NextFile="hiddenWindow.html"/>
+    <ROW File="hiddenWindow.html" Component_="arrow.gif" FileName="HIDDEN~1.HTM|hiddenWindow.html" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\hiddenWindow.html" SelfReg="false" NextFile="folder.png"/>
+    <ROW File="html.css" Component_="arrow.gif" FileName="html.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\html.css" SelfReg="false" NextFile="langGroups.properties"/>
+    <ROW File="html40Latin1.properties" Component_="html40Latin1.properties" FileName="HTML40~1.PRO|html40Latin1.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\entityTables\html40Latin1.properties" SelfReg="false" NextFile="html40Special.properties"/>
+    <ROW File="html40Special.properties" Component_="html40Latin1.properties" FileName="HTML40~2.PRO|html40Special.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\entityTables\html40Special.properties" SelfReg="false" NextFile="html40Symbols.properties"/>
+    <ROW File="html40Symbols.properties" Component_="html40Latin1.properties" FileName="HTML40~3.PRO|html40Symbols.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\entityTables\html40Symbols.properties" SelfReg="false" NextFile="htmlEntityVersions.properties"/>
+    <ROW File="htmlEntityVersions.properties" Component_="html40Latin1.properties" FileName="HTMLEN~1.PRO|htmlEntityVersions.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\entityTables\htmlEntityVersions.properties" SelfReg="false" NextFile="mathml20.properties"/>
+    <ROW File="htmlparser.xpt" Component_="accessibilitymsaa.xpt" FileName="HTMLPA~1.XPT|htmlparser.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\htmlparser.xpt" SelfReg="false" NextFile="imgicon.xpt"/>
+    <ROW File="imgicon.xpt" Component_="accessibilitymsaa.xpt" FileName="imgicon.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\imgicon.xpt" SelfReg="false" NextFile="imglib2.xpt"/>
+    <ROW File="imglib2.xpt" Component_="accessibilitymsaa.xpt" FileName="imglib2.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\imglib2.xpt" SelfReg="false" NextFile="inspector.xpt"/>
+    <ROW File="inspector.xpt" Component_="accessibilitymsaa.xpt" FileName="INSPEC~1.XPT|inspector.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\inspector.xpt" SelfReg="false" NextFile="intl.xpt"/>
+    <ROW File="intl.xpt" Component_="accessibilitymsaa.xpt" FileName="intl.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\intl.xpt" SelfReg="false" NextFile="jar.xpt"/>
+    <ROW File="jar.xpt" Component_="accessibilitymsaa.xpt" FileName="jar.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\jar.xpt" SelfReg="false" NextFile="jsconsoleclhandler.js"/>
+    <ROW File="javaxpcom.jar" Component_="crashreporter.ini" FileName="JAVAXP~1.JAR|javaxpcom.jar" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\javaxpcom.jar" SelfReg="false" NextFile="javaxpcomglue.dll"/>
+    <ROW File="javaxpcomglue.dll" Component_="javaxpcomglue.dll" FileName="JAVAXP~1.DLL|javaxpcomglue.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\javaxpcomglue.dll" SelfReg="false" NextFile="js.exe"/>
+    <ROW File="js.exe" Component_="js.exe" FileName="js.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\js.exe" SelfReg="false" NextFile="js3250.dll" DigSign="true"/>
+    <ROW File="js3250.dll" Component_="js3250.dll" FileName="js3250.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\js3250.dll" SelfReg="false" NextFile="LICENSE"/>
+    <ROW File="jsconsoleclhandler.js" Component_="accessibilitymsaa.xpt" FileName="JSCONS~1.JS|jsconsole-clhandler.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\jsconsole-clhandler.js" SelfReg="false" NextFile="jsdservice.xpt"/>
+    <ROW File="jsdservice.xpt" Component_="accessibilitymsaa.xpt" FileName="JSDSER~1.XPT|jsdservice.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\jsdservice.xpt" SelfReg="false" NextFile="layout_base.xpt"/>
+    <ROW File="langGroups.properties" Component_="arrow.gif" FileName="LANGGR~1.PRO|langGroups.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\langGroups.properties" SelfReg="false" NextFile="language.properties"/>
+    <ROW File="language.properties" Component_="arrow.gif" FileName="LANGUA~1.PRO|language.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\language.properties" SelfReg="false" NextFile="loadingimage.gif"/>
+    <ROW File="layout_base.xpt" Component_="accessibilitymsaa.xpt" FileName="LAYOUT~1.XPT|layout_base.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\layout_base.xpt" SelfReg="false" NextFile="layout_printing.xpt"/>
+    <ROW File="layout_printing.xpt" Component_="accessibilitymsaa.xpt" FileName="LAYOUT~2.XPT|layout_printing.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\layout_printing.xpt" SelfReg="false" NextFile="layout_xul.xpt"/>
+    <ROW File="layout_xul.xpt" Component_="accessibilitymsaa.xpt" FileName="LAYOUT~3.XPT|layout_xul.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\layout_xul.xpt" SelfReg="false" NextFile="layout_xul_tree.xpt"/>
+    <ROW File="layout_xul_tree.xpt" Component_="accessibilitymsaa.xpt" FileName="LAYOUT~4.XPT|layout_xul_tree.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\layout_xul_tree.xpt" SelfReg="false" NextFile="locale.xpt"/>
+    <ROW File="loadingimage.gif" Component_="arrow.gif" FileName="LOADIN~1.GIF|loading-image.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\loading-image.gif" SelfReg="false" NextFile="mathml.css"/>
+    <ROW File="locale.xpt" Component_="accessibilitymsaa.xpt" FileName="locale.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\locale.xpt" SelfReg="false" NextFile="loginmgr.xpt"/>
+    <ROW File="localstore.rdf" Component_="localstore.rdf" FileName="LOCALS~1.RDF|localstore.rdf" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\profile\localstore.rdf" SelfReg="false" NextFile="userChromeexample.css_1"/>
+    <ROW File="localstore.rdf_1" Component_="localstore.rdf_1" FileName="LOCALS~1.RDF|localstore.rdf" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\profile\US\localstore.rdf" SelfReg="false" NextFile="dependentlibs.list"/>
+    <ROW File="loginmgr.xpt" Component_="accessibilitymsaa.xpt" FileName="loginmgr.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\loginmgr.xpt" SelfReg="false" NextFile="lwbrk.xpt"/>
+    <ROW File="lwbrk.xpt" Component_="accessibilitymsaa.xpt" FileName="lwbrk.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\lwbrk.xpt" SelfReg="false" NextFile="mimetype.xpt"/>
+    <ROW File="mathfont.properties" Component_="mathfont.properties" FileName="MATHFO~1.PRO|mathfont.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\fonts\mathfont.properties" SelfReg="false" NextFile="mathfontStandardSymbolsL.properties"/>
+    <ROW File="mathfontSTIXNonUnicode.properties" Component_="mathfont.properties" FileName="MATHFO~3.PRO|mathfontSTIXNonUnicode.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\fonts\mathfontSTIXNonUnicode.properties" SelfReg="false" NextFile="mathfontSTIXSize1.properties"/>
+    <ROW File="mathfontSTIXSize1.properties" Component_="mathfont.properties" FileName="MATHFO~4.PRO|mathfontSTIXSize1.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\fonts\mathfontSTIXSize1.properties" SelfReg="false" NextFile="mathfontSymbol.properties"/>
+    <ROW File="mathfontStandardSymbolsL.properties" Component_="mathfont.properties" FileName="MATHFO~2.PRO|mathfontStandardSymbolsL.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\fonts\mathfontStandardSymbolsL.properties" SelfReg="false" NextFile="mathfontSTIXNonUnicode.properties"/>
+    <ROW File="mathfontSymbol.properties" Component_="mathfont.properties" FileName="MATHFO~5.PRO|mathfontSymbol.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\fonts\mathfontSymbol.properties" SelfReg="false" NextFile="mathfontUnicode.properties"/>
+    <ROW File="mathfontUnicode.properties" Component_="mathfont.properties" FileName="MATHFO~6.PRO|mathfontUnicode.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\fonts\mathfontUnicode.properties" SelfReg="false" NextFile="forms.css"/>
+    <ROW File="mathml.css" Component_="arrow.gif" FileName="mathml.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\mathml.css" SelfReg="false" NextFile="quirk.css"/>
+    <ROW File="mathml.dtd" Component_="mathml.dtd" FileName="mathml.dtd" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\dtd\mathml.dtd" SelfReg="false" NextFile="xhtml11.dtd"/>
+    <ROW File="mathml20.properties" Component_="html40Latin1.properties" FileName="MATHML~1.PRO|mathml20.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\entityTables\mathml20.properties" SelfReg="false" NextFile="transliterate.properties"/>
+    <ROW File="mimetype.xpt" Component_="accessibilitymsaa.xpt" FileName="mimetype.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\mimetype.xpt" SelfReg="false" NextFile="mozbrwsr.xpt"/>
+    <ROW File="mozbrwsr.xpt" Component_="accessibilitymsaa.xpt" FileName="mozbrwsr.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\mozbrwsr.xpt" SelfReg="false" NextFile="mozfind.xpt"/>
+    <ROW File="mozcrt19.dll" Component_="mozcrt19.dll" FileName="mozcrt19.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\mozcrt19.dll" SelfReg="false" NextFile="mozctl.dll"/>
+    <ROW File="mozctl.dll" Component_="mozctl.dll" FileName="mozctl.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\mozctl.dll" SelfReg="false" NextFile="mozctlx.dll"/>
+    <ROW File="mozctlx.dll" Component_="mozctlx.dll" FileName="mozctlx.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\mozctlx.dll" SelfReg="false" NextFile="nspr4.dll"/>
+    <ROW File="mozfind.xpt" Component_="accessibilitymsaa.xpt" FileName="mozfind.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\mozfind.xpt" SelfReg="false" NextFile="necko.xpt"/>
+    <ROW File="nameless.exe" Component_="nameless.exe" FileName="nameless.exe" Attributes="0" SourcePath="nameless\obj\x86\Debug\nameless.exe" SelfReg="false" NextFile="OKUBEN.txt" DigSign="true"/>
+    <ROW File="necko.xpt" Component_="accessibilitymsaa.xpt" FileName="necko.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko.xpt" SelfReg="false" NextFile="necko_about.xpt"/>
+    <ROW File="necko_about.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~1.XPT|necko_about.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_about.xpt" SelfReg="false" NextFile="necko_cache.xpt"/>
+    <ROW File="necko_cache.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~2.XPT|necko_cache.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_cache.xpt" SelfReg="false" NextFile="necko_cookie.xpt"/>
+    <ROW File="necko_cookie.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~3.XPT|necko_cookie.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_cookie.xpt" SelfReg="false" NextFile="necko_dns.xpt"/>
+    <ROW File="necko_dns.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~4.XPT|necko_dns.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_dns.xpt" SelfReg="false" NextFile="necko_file.xpt"/>
+    <ROW File="necko_file.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~5.XPT|necko_file.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_file.xpt" SelfReg="false" NextFile="necko_ftp.xpt"/>
+    <ROW File="necko_ftp.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~6.XPT|necko_ftp.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_ftp.xpt" SelfReg="false" NextFile="necko_http.xpt"/>
+    <ROW File="necko_http.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~7.XPT|necko_http.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_http.xpt" SelfReg="false" NextFile="necko_res.xpt"/>
+    <ROW File="necko_res.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~8.XPT|necko_res.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_res.xpt" SelfReg="false" NextFile="necko_socket.xpt"/>
+    <ROW File="necko_socket.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO_~9.XPT|necko_socket.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_socket.xpt" SelfReg="false" NextFile="necko_strconv.xpt"/>
+    <ROW File="necko_strconv.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO~10.XPT|necko_strconv.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_strconv.xpt" SelfReg="false" NextFile="necko_viewsource.xpt"/>
+    <ROW File="necko_viewsource.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO~11.XPT|necko_viewsource.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_viewsource.xpt" SelfReg="false" NextFile="necko_wifi.xpt"/>
+    <ROW File="necko_wifi.xpt" Component_="accessibilitymsaa.xpt" FileName="NECKO~12.XPT|necko_wifi.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\necko_wifi.xpt" SelfReg="false" NextFile="NetworkGeolocationProvider.js"/>
+    <ROW File="npnul32.dll" Component_="npnul32.dll" FileName="npnul32.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\plugins\npnul32.dll" SelfReg="false" NextFile="redit.exe"/>
+    <ROW File="nsAddonRepository.js" Component_="accessibilitymsaa.xpt" FileName="NSADDO~1.JS|nsAddonRepository.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsAddonRepository.js" SelfReg="false" NextFile="nsBadCertHandler.js"/>
+    <ROW File="nsBadCertHandler.js" Component_="accessibilitymsaa.xpt" FileName="NSBADC~1.JS|nsBadCertHandler.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsBadCertHandler.js" SelfReg="false" NextFile="nsBlocklistService.js"/>
+    <ROW File="nsBlocklistService.js" Component_="accessibilitymsaa.xpt" FileName="NSBLOC~1.JS|nsBlocklistService.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsBlocklistService.js" SelfReg="false" NextFile="nsContentDispatchChooser.js"/>
+    <ROW File="nsContentDispatchChooser.js" Component_="accessibilitymsaa.xpt" FileName="NSCONT~1.JS|nsContentDispatchChooser.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsContentDispatchChooser.js" SelfReg="false" NextFile="nsContentPrefService.js"/>
+    <ROW File="nsContentPrefService.js" Component_="accessibilitymsaa.xpt" FileName="NSCONT~2.JS|nsContentPrefService.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsContentPrefService.js" SelfReg="false" NextFile="nsDefaultCLH.js"/>
+    <ROW File="nsDefaultCLH.js" Component_="accessibilitymsaa.xpt" FileName="NSDEFA~1.JS|nsDefaultCLH.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsDefaultCLH.js" SelfReg="false" NextFile="nsDownloadManagerUI.js"/>
+    <ROW File="nsDownloadManagerUI.js" Component_="accessibilitymsaa.xpt" FileName="NSDOWN~1.JS|nsDownloadManagerUI.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsDownloadManagerUI.js" SelfReg="false" NextFile="nsExtensionManager.js"/>
+    <ROW File="nsExtensionManager.js" Component_="accessibilitymsaa.xpt" FileName="NSEXTE~1.JS|nsExtensionManager.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsExtensionManager.js" SelfReg="false" NextFile="nsHandlerService.js"/>
+    <ROW File="nsHandlerService.js" Component_="accessibilitymsaa.xpt" FileName="NSHAND~1.JS|nsHandlerService.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsHandlerService.js" SelfReg="false" NextFile="nsHelperAppDlg.js"/>
+    <ROW File="nsHelperAppDlg.js" Component_="accessibilitymsaa.xpt" FileName="NSHELP~1.JS|nsHelperAppDlg.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsHelperAppDlg.js" SelfReg="false" NextFile="nsLivemarkService.js"/>
+    <ROW File="nsLivemarkService.js" Component_="accessibilitymsaa.xpt" FileName="NSLIVE~1.JS|nsLivemarkService.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsLivemarkService.js" SelfReg="false" NextFile="nsLoginInfo.js"/>
+    <ROW File="nsLoginInfo.js" Component_="accessibilitymsaa.xpt" FileName="NSLOGI~1.JS|nsLoginInfo.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsLoginInfo.js" SelfReg="false" NextFile="nsLoginManager.js"/>
+    <ROW File="nsLoginManager.js" Component_="accessibilitymsaa.xpt" FileName="NSLOGI~2.JS|nsLoginManager.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsLoginManager.js" SelfReg="false" NextFile="nsLoginManagerPrompter.js"/>
+    <ROW File="nsLoginManagerPrompter.js" Component_="accessibilitymsaa.xpt" FileName="NSLOGI~3.JS|nsLoginManagerPrompter.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsLoginManagerPrompter.js" SelfReg="false" NextFile="nsPlacesDBFlush.js"/>
+    <ROW File="nsPlacesDBFlush.js" Component_="accessibilitymsaa.xpt" FileName="NSPLAC~1.JS|nsPlacesDBFlush.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsPlacesDBFlush.js" SelfReg="false" NextFile="nsPostUpdateWin.js"/>
+    <ROW File="nsPostUpdateWin.js" Component_="accessibilitymsaa.xpt" FileName="NSPOST~1.JS|nsPostUpdateWin.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsPostUpdateWin.js" SelfReg="false" NextFile="nsProgressDialog.js"/>
+    <ROW File="nsProgressDialog.js" Component_="accessibilitymsaa.xpt" FileName="NSPROG~1.JS|nsProgressDialog.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsProgressDialog.js" SelfReg="false" NextFile="nsProxyAutoConfig.js"/>
+    <ROW File="nsProxyAutoConfig.js" Component_="accessibilitymsaa.xpt" FileName="NSPROX~1.JS|nsProxyAutoConfig.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsProxyAutoConfig.js" SelfReg="false" NextFile="nsSearchService.js"/>
+    <ROW File="nsSearchService.js" Component_="accessibilitymsaa.xpt" FileName="NSSEAR~1.JS|nsSearchService.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsSearchService.js" SelfReg="false" NextFile="nsSearchSuggestions.js"/>
+    <ROW File="nsSearchSuggestions.js" Component_="accessibilitymsaa.xpt" FileName="NSSEAR~2.JS|nsSearchSuggestions.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsSearchSuggestions.js" SelfReg="false" NextFile="nsTaggingService.js"/>
+    <ROW File="nsTaggingService.js" Component_="accessibilitymsaa.xpt" FileName="NSTAGG~1.JS|nsTaggingService.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsTaggingService.js" SelfReg="false" NextFile="nsTryToClose.js"/>
+    <ROW File="nsTryToClose.js" Component_="accessibilitymsaa.xpt" FileName="NSTRYT~1.JS|nsTryToClose.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsTryToClose.js" SelfReg="false" NextFile="nsUpdateService.js"/>
+    <ROW File="nsURLFormatter.js" Component_="accessibilitymsaa.xpt" FileName="NSURLF~1.JS|nsURLFormatter.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsURLFormatter.js" SelfReg="false" NextFile="nsWebHandlerApp.js"/>
+    <ROW File="nsUpdateService.js" Component_="accessibilitymsaa.xpt" FileName="NSUPDA~1.JS|nsUpdateService.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsUpdateService.js" SelfReg="false" NextFile="nsURLFormatter.js"/>
+    <ROW File="nsWebHandlerApp.js" Component_="accessibilitymsaa.xpt" FileName="NSWEBH~1.JS|nsWebHandlerApp.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsWebHandlerApp.js" SelfReg="false" NextFile="nsXULAppInstall.js"/>
+    <ROW File="nsXULAppInstall.js" Component_="accessibilitymsaa.xpt" FileName="NSXULA~1.JS|nsXULAppInstall.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\nsXULAppInstall.js" SelfReg="false" NextFile="oji.xpt"/>
+    <ROW File="nspr4.dll" Component_="nspr4.dll" FileName="nspr4.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\nspr4.dll" SelfReg="false" NextFile="nss3.dll"/>
+    <ROW File="nss3.dll" Component_="nss3.dll" FileName="nss3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\nss3.dll" SelfReg="false" NextFile="nssckbi.dll"/>
+    <ROW File="nssckbi.dll" Component_="nssckbi.dll" FileName="nssckbi.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\nssckbi.dll" SelfReg="false" NextFile="nssdbm3.dll"/>
+    <ROW File="nssdbm3.dll" Component_="nssdbm3.dll" FileName="nssdbm3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\nssdbm3.dll" SelfReg="false" NextFile="nssutil3.dll"/>
+    <ROW File="nssutil3.dll" Component_="nssutil3.dll" FileName="nssutil3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\nssutil3.dll" SelfReg="false" NextFile="platform.ini"/>
+    <ROW File="oji.xpt" Component_="accessibilitymsaa.xpt" FileName="oji.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\oji.xpt" SelfReg="false" NextFile="parentalcontrols.xpt"/>
+    <ROW File="parentalcontrols.xpt" Component_="accessibilitymsaa.xpt" FileName="PARENT~1.XPT|parentalcontrols.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\parentalcontrols.xpt" SelfReg="false" NextFile="pipboot.xpt"/>
+    <ROW File="pipboot.xpt" Component_="accessibilitymsaa.xpt" FileName="pipboot.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\pipboot.xpt" SelfReg="false" NextFile="pipnss.xpt"/>
+    <ROW File="pipnss.xpt" Component_="accessibilitymsaa.xpt" FileName="pipnss.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\pipnss.xpt" SelfReg="false" NextFile="pippki.xpt"/>
+    <ROW File="pippki.jar" Component_="classic.jar" FileName="pippki.jar" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\pippki.jar" SelfReg="false" NextFile="pippki.manifest"/>
+    <ROW File="pippki.manifest" Component_="classic.jar" FileName="PIPPKI~1.MAN|pippki.manifest" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\pippki.manifest" SelfReg="false" NextFile="toolkit.jar"/>
+    <ROW File="pippki.xpt" Component_="accessibilitymsaa.xpt" FileName="pippki.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\pippki.xpt" SelfReg="false" NextFile="places.xpt"/>
+    <ROW File="places.xpt" Component_="accessibilitymsaa.xpt" FileName="places.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\places.xpt" SelfReg="false" NextFile="plugin.xpt"/>
+    <ROW File="platform.ini" Component_="crashreporter.ini" FileName="platform.ini" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\platform.ini" SelfReg="false" NextFile="plc4.dll"/>
+    <ROW File="platform.js" Component_="platform.js" FileName="platform.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\autoconfig\platform.js" SelfReg="false" NextFile="prefcalls.js"/>
+    <ROW File="plc4.dll" Component_="plc4.dll" FileName="plc4.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\plc4.dll" SelfReg="false" NextFile="plds4.dll"/>
+    <ROW File="plds4.dll" Component_="plds4.dll" FileName="plds4.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\plds4.dll" SelfReg="false" NextFile="npnul32.dll"/>
+    <ROW File="plugin.xpt" Component_="accessibilitymsaa.xpt" FileName="plugin.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\plugin.xpt" SelfReg="false" NextFile="pluginGlue.js"/>
+    <ROW File="pluginGlue.js" Component_="accessibilitymsaa.xpt" FileName="PLUGIN~1.JS|pluginGlue.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\pluginGlue.js" SelfReg="false" NextFile="pref.xpt"/>
+    <ROW File="pref.xpt" Component_="accessibilitymsaa.xpt" FileName="pref.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\pref.xpt" SelfReg="false" NextFile="prefetch.xpt"/>
+    <ROW File="prefcalls.js" Component_="platform.js" FileName="PREFCA~1.JS|prefcalls.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\autoconfig\prefcalls.js" SelfReg="false" NextFile="xulrunner.js"/>
+    <ROW File="prefetch.xpt" Component_="accessibilitymsaa.xpt" FileName="prefetch.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\prefetch.xpt" SelfReg="false" NextFile="profile.xpt"/>
+    <ROW File="profile.xpt" Component_="accessibilitymsaa.xpt" FileName="profile.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\profile.xpt" SelfReg="false" NextFile="proxyObject.xpt"/>
+    <ROW File="proxyObject.xpt" Component_="accessibilitymsaa.xpt" FileName="PROXYO~1.XPT|proxyObject.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\proxyObject.xpt" SelfReg="false" NextFile="rdf.xpt"/>
+    <ROW File="quirk.css" Component_="arrow.gif" FileName="quirk.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\quirk.css" SelfReg="false" NextFile="svg.css"/>
+    <ROW File="rdf.xpt" Component_="accessibilitymsaa.xpt" FileName="rdf.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\rdf.xpt" SelfReg="false" NextFile="satchel.xpt"/>
+    <ROW File="redit.exe" Component_="redit.exe" FileName="redit.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\redit.exe" SelfReg="false" NextFile="arrow.gif" DigSign="true"/>
+    <ROW File="satchel.xpt" Component_="accessibilitymsaa.xpt" FileName="satchel.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\satchel.xpt" SelfReg="false" NextFile="saxparser.xpt"/>
+    <ROW File="saxparser.xpt" Component_="accessibilitymsaa.xpt" FileName="SAXPAR~1.XPT|saxparser.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\saxparser.xpt" SelfReg="false" NextFile="shistory.xpt"/>
+    <ROW File="securityprefs.js" Component_="all.js" FileName="SECURI~1.JS|security-prefs.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\greprefs\security-prefs.js" SelfReg="false" NextFile="xpinstall.js"/>
+    <ROW File="shistory.xpt" Component_="accessibilitymsaa.xpt" FileName="shistory.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\shistory.xpt" SelfReg="false" NextFile="spellchecker.xpt"/>
+    <ROW File="smime3.dll" Component_="smime3.dll" FileName="smime3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\smime3.dll" SelfReg="false" NextFile="softokn3.chk"/>
+    <ROW File="softokn3.chk" Component_="crashreporter.ini" FileName="softokn3.chk" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\softokn3.chk" SelfReg="false" NextFile="softokn3.dll"/>
+    <ROW File="softokn3.dll" Component_="softokn3.dll" FileName="softokn3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\softokn3.dll" SelfReg="false" NextFile="sqlite3.dll"/>
+    <ROW File="spellchecker.xpt" Component_="accessibilitymsaa.xpt" FileName="SPELLC~1.XPT|spellchecker.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\spellchecker.xpt" SelfReg="false" NextFile="storageLegacy.js"/>
+    <ROW File="sqlite3.dll" Component_="sqlite3.dll" FileName="sqlite3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\sqlite3.dll" SelfReg="false" NextFile="ssl3.dll"/>
+    <ROW File="ssl3.dll" Component_="ssl3.dll" FileName="ssl3.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\ssl3.dll" SelfReg="false" NextFile="update.locale"/>
+    <ROW File="storage.xpt" Component_="accessibilitymsaa.xpt" FileName="storage.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\storage.xpt" SelfReg="false" NextFile="toolkitprofile.xpt"/>
+    <ROW File="storageLegacy.js" Component_="accessibilitymsaa.xpt" FileName="STORAG~1.JS|storage-Legacy.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\storage-Legacy.js" SelfReg="false" NextFile="storagemozStorage.js"/>
+    <ROW File="storagemozStorage.js" Component_="accessibilitymsaa.xpt" FileName="STORAG~2.JS|storage-mozStorage.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\storage-mozStorage.js" SelfReg="false" NextFile="storage.xpt"/>
+    <ROW File="svg.css" Component_="arrow.gif" FileName="svg.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\svg.css" SelfReg="false" NextFile="tableaddcolumnafteractive.gif"/>
+    <ROW File="tableaddcolumnafter.gif" Component_="arrow.gif" FileName="TABLE-~3.GIF|table-add-column-after.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-column-after.gif" SelfReg="false" NextFile="tableaddcolumnbeforeactive.gif"/>
+    <ROW File="tableaddcolumnafteractive.gif" Component_="arrow.gif" FileName="TABLE-~1.GIF|table-add-column-after-active.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-column-after-active.gif" SelfReg="false" NextFile="tableaddcolumnafterhover.gif"/>
+    <ROW File="tableaddcolumnafterhover.gif" Component_="arrow.gif" FileName="TABLE-~2.GIF|table-add-column-after-hover.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-column-after-hover.gif" SelfReg="false" NextFile="tableaddcolumnafter.gif"/>
+    <ROW File="tableaddcolumnbefore.gif" Component_="arrow.gif" FileName="TABLE-~6.GIF|table-add-column-before.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-column-before.gif" SelfReg="false" NextFile="tableaddrowafteractive.gif"/>
+    <ROW File="tableaddcolumnbeforeactive.gif" Component_="arrow.gif" FileName="TABLE-~4.GIF|table-add-column-before-active.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-column-before-active.gif" SelfReg="false" NextFile="tableaddcolumnbeforehover.gif"/>
+    <ROW File="tableaddcolumnbeforehover.gif" Component_="arrow.gif" FileName="TABLE-~5.GIF|table-add-column-before-hover.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-column-before-hover.gif" SelfReg="false" NextFile="tableaddcolumnbefore.gif"/>
+    <ROW File="tableaddrowafter.gif" Component_="arrow.gif" FileName="TABLE-~9.GIF|table-add-row-after.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-row-after.gif" SelfReg="false" NextFile="tableaddrowbeforeactive.gif"/>
+    <ROW File="tableaddrowafteractive.gif" Component_="arrow.gif" FileName="TABLE-~7.GIF|table-add-row-after-active.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-row-after-active.gif" SelfReg="false" NextFile="tableaddrowafterhover.gif"/>
+    <ROW File="tableaddrowafterhover.gif" Component_="arrow.gif" FileName="TABLE-~8.GIF|table-add-row-after-hover.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-row-after-hover.gif" SelfReg="false" NextFile="tableaddrowafter.gif"/>
+    <ROW File="tableaddrowbefore.gif" Component_="arrow.gif" FileName="TABLE~12.GIF|table-add-row-before.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-row-before.gif" SelfReg="false" NextFile="tableremovecolumnactive.gif"/>
+    <ROW File="tableaddrowbeforeactive.gif" Component_="arrow.gif" FileName="TABLE~10.GIF|table-add-row-before-active.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-row-before-active.gif" SelfReg="false" NextFile="tableaddrowbeforehover.gif"/>
+    <ROW File="tableaddrowbeforehover.gif" Component_="arrow.gif" FileName="TABLE~11.GIF|table-add-row-before-hover.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-add-row-before-hover.gif" SelfReg="false" NextFile="tableaddrowbefore.gif"/>
+    <ROW File="tableremovecolumn.gif" Component_="arrow.gif" FileName="TABLE~15.GIF|table-remove-column.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-remove-column.gif" SelfReg="false" NextFile="tableremoverowactive.gif"/>
+    <ROW File="tableremovecolumnactive.gif" Component_="arrow.gif" FileName="TABLE~13.GIF|table-remove-column-active.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-remove-column-active.gif" SelfReg="false" NextFile="tableremovecolumnhover.gif"/>
+    <ROW File="tableremovecolumnhover.gif" Component_="arrow.gif" FileName="TABLE~14.GIF|table-remove-column-hover.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-remove-column-hover.gif" SelfReg="false" NextFile="tableremovecolumn.gif"/>
+    <ROW File="tableremoverow.gif" Component_="arrow.gif" FileName="TABLE~18.GIF|table-remove-row.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-remove-row.gif" SelfReg="false" NextFile="ua.css"/>
+    <ROW File="tableremoverowactive.gif" Component_="arrow.gif" FileName="TABLE~16.GIF|table-remove-row-active.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-remove-row-active.gif" SelfReg="false" NextFile="tableremoverowhover.gif"/>
+    <ROW File="tableremoverowhover.gif" Component_="arrow.gif" FileName="TABLE~17.GIF|table-remove-row-hover.gif" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\table-remove-row-hover.gif" SelfReg="false" NextFile="tableremoverow.gif"/>
+    <ROW File="toolkit.jar" Component_="classic.jar" FileName="toolkit.jar" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\toolkit.jar" SelfReg="false" NextFile="toolkit.manifest"/>
+    <ROW File="toolkit.manifest" Component_="classic.jar" FileName="TOOLKI~1.MAN|toolkit.manifest" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\chrome\toolkit.manifest" SelfReg="false" NextFile="accessibilitymsaa.xpt"/>
+    <ROW File="toolkitprofile.xpt" Component_="accessibilitymsaa.xpt" FileName="TOOLKI~1.XPT|toolkitprofile.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\toolkitprofile.xpt" SelfReg="false" NextFile="toolkitsearch.xpt"/>
+    <ROW File="toolkitsearch.xpt" Component_="accessibilitymsaa.xpt" FileName="TOOLKI~2.XPT|toolkitsearch.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\toolkitsearch.xpt" SelfReg="false" NextFile="txEXSLTRegExFunctions.js"/>
+    <ROW File="transliterate.properties" Component_="html40Latin1.properties" FileName="TRANSL~1.PRO|transliterate.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\entityTables\transliterate.properties" SelfReg="false" NextFile="mathfont.properties"/>
+    <ROW File="txEXSLTRegExFunctions.js" Component_="accessibilitymsaa.xpt" FileName="TXEXSL~1.JS|txEXSLTRegExFunctions.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\txEXSLTRegExFunctions.js" SelfReg="false" NextFile="txmgr.xpt"/>
+    <ROW File="txmgr.xpt" Component_="accessibilitymsaa.xpt" FileName="txmgr.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\txmgr.xpt" SelfReg="false" NextFile="txtsvc.xpt"/>
+    <ROW File="txtsvc.xpt" Component_="accessibilitymsaa.xpt" FileName="txtsvc.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\txtsvc.xpt" SelfReg="false" NextFile="uconv.xpt"/>
+    <ROW File="ua.css" Component_="arrow.gif" FileName="ua.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\ua.css" SelfReg="false" NextFile="viewsource.css"/>
+    <ROW File="uconv.xpt" Component_="accessibilitymsaa.xpt" FileName="uconv.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\uconv.xpt" SelfReg="false" NextFile="unicharutil.xpt"/>
+    <ROW File="unicharutil.xpt" Component_="accessibilitymsaa.xpt" FileName="UNICHA~1.XPT|unicharutil.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\unicharutil.xpt" SelfReg="false" NextFile="update.xpt"/>
+    <ROW File="update.locale" Component_="crashreporter.ini" FileName="UPDATE~1.LOC|update.locale" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\update.locale" SelfReg="false" NextFile="updater.exe"/>
+    <ROW File="update.xpt" Component_="accessibilitymsaa.xpt" FileName="update.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\update.xpt" SelfReg="false" NextFile="uriloader.xpt"/>
+    <ROW File="updater.exe" Component_="updater.exe" FileName="updater.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\updater.exe" SelfReg="false" NextFile="xpcom.dll" DigSign="true"/>
+    <ROW File="uriloader.xpt" Component_="accessibilitymsaa.xpt" FileName="URILOA~1.XPT|uriloader.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\uriloader.xpt" SelfReg="false" NextFile="urlformatter.xpt"/>
+    <ROW File="urlformatter.xpt" Component_="accessibilitymsaa.xpt" FileName="URLFOR~1.XPT|urlformatter.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\urlformatter.xpt" SelfReg="false" NextFile="webbrowserpersist.xpt"/>
+    <ROW File="userChromeexample.css" Component_="userChromeexample.css" FileName="USERCH~1.CSS|userChrome-example.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\profile\chrome\userChrome-example.css" SelfReg="false" NextFile="userContentexample.css"/>
+    <ROW File="userChromeexample.css_1" Component_="userChromeexample.css_1" FileName="USERCH~1.CSS|userChrome-example.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\profile\US\chrome\userChrome-example.css" SelfReg="false" NextFile="userContentexample.css_1"/>
+    <ROW File="userContentexample.css" Component_="userChromeexample.css" FileName="USERCO~1.CSS|userContent-example.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\profile\chrome\userContent-example.css" SelfReg="false" NextFile="localstore.rdf"/>
+    <ROW File="userContentexample.css_1" Component_="userChromeexample.css_1" FileName="USERCO~1.CSS|userContent-example.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\profile\US\chrome\userContent-example.css" SelfReg="false" NextFile="localstore.rdf_1"/>
+    <ROW File="utils.js" Component_="debug.js" FileName="utils.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\modules\utils.js" SelfReg="false" NextFile="WindowDraggingUtils.jsm"/>
+    <ROW File="viewsource.css" Component_="arrow.gif" FileName="VIEWSO~1.CSS|viewsource.css" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\viewsource.css" SelfReg="false" NextFile="wincharset.properties"/>
+    <ROW File="webBrowser_core.xpt" Component_="accessibilitymsaa.xpt" FileName="WEBBRO~2.XPT|webBrowser_core.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\webBrowser_core.xpt" SelfReg="false" NextFile="webshell_idls.xpt"/>
+    <ROW File="webbrowserpersist.xpt" Component_="accessibilitymsaa.xpt" FileName="WEBBRO~1.XPT|webbrowserpersist.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\webbrowserpersist.xpt" SelfReg="false" NextFile="webBrowser_core.xpt"/>
+    <ROW File="webshell_idls.xpt" Component_="accessibilitymsaa.xpt" FileName="WEBSHE~1.XPT|webshell_idls.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\webshell_idls.xpt" SelfReg="false" NextFile="widget.xpt"/>
+    <ROW File="widget.xpt" Component_="accessibilitymsaa.xpt" FileName="widget.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\widget.xpt" SelfReg="false" NextFile="windowds.xpt"/>
+    <ROW File="wincharset.properties" Component_="arrow.gif" FileName="WINCHA~1.PRO|wincharset.properties" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\wincharset.properties" SelfReg="false" NextFile="smime3.dll"/>
+    <ROW File="windowds.xpt" Component_="accessibilitymsaa.xpt" FileName="windowds.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\windowds.xpt" SelfReg="false" NextFile="windowwatcher.xpt"/>
+    <ROW File="windowwatcher.xpt" Component_="accessibilitymsaa.xpt" FileName="WINDOW~1.XPT|windowwatcher.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\windowwatcher.xpt" SelfReg="false" NextFile="xpcom_base.xpt"/>
+    <ROW File="xhtml11.dtd" Component_="mathml.dtd" FileName="xhtml11.dtd" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\res\dtd\xhtml11.dtd" SelfReg="false" NextFile="EditorOverride.css"/>
+    <ROW File="xpcom.dll" Component_="xpcom.dll" FileName="xpcom.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xpcom.dll" SelfReg="false" NextFile="xpcshell.exe"/>
+    <ROW File="xpcom_base.xpt" Component_="accessibilitymsaa.xpt" FileName="XPCOM_~1.XPT|xpcom_base.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpcom_base.xpt" SelfReg="false" NextFile="xpcom_components.xpt"/>
+    <ROW File="xpcom_components.xpt" Component_="accessibilitymsaa.xpt" FileName="XPCOM_~2.XPT|xpcom_components.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpcom_components.xpt" SelfReg="false" NextFile="xpcom_ds.xpt"/>
+    <ROW File="xpcom_ds.xpt" Component_="accessibilitymsaa.xpt" FileName="xpcom_ds.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpcom_ds.xpt" SelfReg="false" NextFile="xpcom_io.xpt"/>
+    <ROW File="xpcom_io.xpt" Component_="accessibilitymsaa.xpt" FileName="xpcom_io.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpcom_io.xpt" SelfReg="false" NextFile="xpcom_system.xpt"/>
+    <ROW File="xpcom_system.xpt" Component_="accessibilitymsaa.xpt" FileName="XPCOM_~3.XPT|xpcom_system.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpcom_system.xpt" SelfReg="false" NextFile="xpcom_thread.xpt"/>
+    <ROW File="xpcom_thread.xpt" Component_="accessibilitymsaa.xpt" FileName="XPCOM_~4.XPT|xpcom_thread.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpcom_thread.xpt" SelfReg="false" NextFile="xpcom_xpti.xpt"/>
+    <ROW File="xpcom_xpti.xpt" Component_="accessibilitymsaa.xpt" FileName="XPCOM_~5.XPT|xpcom_xpti.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpcom_xpti.xpt" SelfReg="false" NextFile="xpconnect.xpt"/>
+    <ROW File="xpconnect.xpt" Component_="accessibilitymsaa.xpt" FileName="XPCONN~1.XPT|xpconnect.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpconnect.xpt" SelfReg="false" NextFile="xpinstall.xpt"/>
+    <ROW File="xpcshell.exe" Component_="xpcshell.exe" FileName="xpcshell.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xpcshell.exe" SelfReg="false" NextFile="xpidl.exe" DigSign="true"/>
+    <ROW File="xpidl.exe" Component_="xpidl.exe" FileName="xpidl.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xpidl.exe" SelfReg="false" NextFile="xpt_dump.exe" DigSign="true"/>
+    <ROW File="xpinstall.js" Component_="all.js" FileName="XPINST~1.JS|xpinstall.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\greprefs\xpinstall.js" SelfReg="false" NextFile="IA2Marshal.dll"/>
+    <ROW File="xpinstall.xpt" Component_="accessibilitymsaa.xpt" FileName="XPINST~1.XPT|xpinstall.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpinstall.xpt" SelfReg="false" NextFile="xpti.dat"/>
+    <ROW File="xpt_dump.exe" Component_="xpt_dump.exe" FileName="xpt_dump.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xpt_dump.exe" SelfReg="false" NextFile="xpt_link.exe" DigSign="true"/>
+    <ROW File="xpt_link.exe" Component_="xpt_link.exe" FileName="xpt_link.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xpt_link.exe" SelfReg="false" NextFile="xul.dll" DigSign="true"/>
+    <ROW File="xpti.dat" Component_="accessibilitymsaa.xpt" FileName="xpti.dat" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xpti.dat" SelfReg="false" NextFile="xulapp.xpt"/>
+    <ROW File="xul.dll" Component_="xul.dll" FileName="xul.dll" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xul.dll" SelfReg="false" NextFile="xulrunnerstub.exe"/>
+    <ROW File="xulapp.xpt" Component_="accessibilitymsaa.xpt" FileName="xulapp.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xulapp.xpt" SelfReg="false" NextFile="xulapp_setup.xpt"/>
+    <ROW File="xulapp_setup.xpt" Component_="accessibilitymsaa.xpt" FileName="XULAPP~1.XPT|xulapp_setup.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xulapp_setup.xpt" SelfReg="false" NextFile="xuldoc.xpt"/>
+    <ROW File="xuldoc.xpt" Component_="accessibilitymsaa.xpt" FileName="xuldoc.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xuldoc.xpt" SelfReg="false" NextFile="xultmpl.xpt"/>
+    <ROW File="xulrunner.exe" Component_="xulrunner.exe" FileName="XULRUN~2.EXE|xulrunner.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xulrunner.exe" SelfReg="false" NextFile="nameless.exe" DigSign="true"/>
+    <ROW File="xulrunner.js" Component_="xulrunner.js" FileName="XULRUN~1.JS|xulrunner.js" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\defaults\pref\xulrunner.js" SelfReg="false" NextFile="userChromeexample.css"/>
+    <ROW File="xulrunnerstub.exe" Component_="xulrunnerstub.exe" FileName="XULRUN~1.EXE|xulrunner-stub.exe" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\xulrunner-stub.exe" SelfReg="false" NextFile="xulrunner.exe" DigSign="true"/>
+    <ROW File="xultmpl.xpt" Component_="accessibilitymsaa.xpt" FileName="xultmpl.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\xultmpl.xpt" SelfReg="false" NextFile="zipwriter.xpt"/>
+    <ROW File="zipwriter.xpt" Component_="accessibilitymsaa.xpt" FileName="ZIPWRI~1.XPT|zipwriter.xpt" Attributes="0" SourcePath="..\..\..\Programlarım\nameless\data\components\zipwriter.xpt" SelfReg="false" NextFile="crashreporter.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" PackageFolder="..\..\..\..\Desktop" PackageFileName="nameless" Languages="en" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#nameless.exe]"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="AI_ViewReadme" Type="1" Source="aicustact.dll" Target="[#OKUBEN.txt]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+    <ATTRIBUTE name="RegisterProduct" value="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="( Version9X OR ( NOT VersionNT64 ) OR ( VersionNT64 AND ((VersionNT64 &lt;&gt; 502) OR (ServicePackLevel &lt;&gt; 2) OR (MsiNTProductType &lt;&gt; 1)) AND ((VersionNT64 &lt;&gt; 502) OR (ServicePackLevel &lt;&gt; 2) OR (MsiNTProductType = 1)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNT64Display]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT64" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="( Version9X OR VersionNT64 OR ( VersionNT AND ((VersionNT &lt;&gt; 501) OR (ServicePackLevel &lt;&gt; 3)) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel &lt;&gt; 2)) ) )" Description="[ProductName] cannot be installed on the following Windows versions: [WindowsTypeNTDisplay]." DescriptionLocId="AI.LaunchCondition.NoSpecificNT" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT64 OR ((VersionNT &lt;&gt; 501) OR (ServicePackLevel = 3))) AND ((VersionNT &lt;&gt; 502) OR (ServicePackLevel = 2))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="nameless" Directory_="DesktopFolder" Name="nameless" Component_="nameless.exe" Target="[#nameless.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
